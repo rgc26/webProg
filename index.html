@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Graphic Designer Portfolio — Your Name</title>
+  <style>
+    :root{
+      --accent:#ff6b6b;
+      --dark:#0f1724;
+      --muted:#6b7280;
+      --card:#0b1220;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071024 0%, #071824 100%);color:#e6eef9;line-height:1.45}
+
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo-mark{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#ffb86b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#071024}
+    .brand{font-weight:700;font-size:18px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    /* Hero */
+    .hero{display:flex;gap:28px;align-items:center;margin:28px 0}
+    .intro{flex:1}
+    .intro h1{font-size:28px;margin:0 0 8px}
+    .intro p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#071024;font-weight:700;text-decoration:none}
+
+    /* Gallery */
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin:18px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:10px;overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .card h3{font-size:15px;margin:10px 0 6px}
+    .card p{color:var(--muted);margin:0;font-size:13px}
+    .card a{text-decoration:none;color:inherit;display:block}
+    .card a:hover h3{color:var(--accent)}
+
+    /* Video */
+    .video-wrap{margin-top:18px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+    video{display:block;width:100%;height:auto;background:#000}
+
+    /* Footer */
+    footer{margin:48px 0 20px;color:var(--muted);text-align:center;font-size:14px}
+
+    /* Responsive tweaks */
+    @media (max-width:640px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .logo-mark{width:40px;height:40px}
+    }
+
+    /* Simple hover effect */
+    .card:hover{transform:translateY(-6px);transition:transform .28s ease}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-mark">GD</div>
+        <div>
+          <div class="brand">Your Name — Graphic Designer</div>
+          <div style="color:var(--muted);font-size:13px">Branding • Illustration • UI</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#works">Works</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <h1>Clean, memorable visual identities & digital art</h1>
+        <p>I design brand systems, illustrations, and UI assets that help products and people stand out. Available for freelance and full-time work.</p>
+        <a class="cta" href="#contact">Hire me</a>
+      </div>
+      <div style="width:320px;">
+        <img src="https://images.unsplash.com/photo-1520975863876-7a9b3a1f0f0c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Artwork preview" style="width:100%;border-radius:12px;display:block;object-fit:cover;height:220px;">
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="section-title">
+        <h2 style="margin:0">Selected Works</h2>
+        <div style="color:var(--muted);font-size:14px">Branding / Editorial / Digital</div>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <a href="works/project1.html" target="_blank">
+            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 1">
+            <h3>Brand Identity — Citrus Co.</h3>
+            <p>Logo, stationery, and packaging concepts for a craft beverage brand.</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="works/project2.html" target="_blank">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 2">
+            <h3>Editorial Spread — Modern Magazine</h3>
+            <p>Layout and illustration for a 12-page editorial feature.</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="works/project3.html" target="_blank">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 3">
+            <h3>UI Assets — Mobile App</h3>
+            <p>Illustrations and icon set for a lifestyle app.</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="works/project4.html" target="_blank">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 4">
+            <h3>Poster Series</h3>
+            <p>Bold typographic posters for an urban arts event.</p>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="video" style="margin-top:28px">
+      <div class="section-title">
+        <h2 style="margin:0">Process & Showreel</h2>
+        <div style="color:var(--muted);font-size:14px">A short walkthrough of my process</div>
+      </div>
+
+      <div class="video-wrap">
+        <video controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder">
+          <source src="/assets/showreel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <div class="section-title">
+        <h2 style="margin:0">Contact</h2>
+        <div style="color:var(--muted);font-size:14px">Available for freelance & collaborations</div>
+      </div>
+
+      <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:12px">
+        <div style="min-width:220px">
+          <strong>Email</strong>
+          <div style="color:var(--muted)">hello@yourdomain.com</div>
+        </div>
+        <div style="min-width:220px">
+          <strong>Behance / Dribbble</strong>
+          <div style="color:var(--muted)">behance.net/yourname</div>
+        </div>
+        <a class="cta" href="mailto:hello@yourdomain.com" style="margin-left:auto">Send message</a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year">2025</span> Your Name — crafted with ♥
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
